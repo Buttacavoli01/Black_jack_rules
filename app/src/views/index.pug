@@ -4,18 +4,17 @@ html(lang="en",dir="ltr")
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Playing Black Jack
-    //link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
     link(rel="stylesheet", href="dist/styles/main.min.css")
-    
 
-  body
-      
-      //TODO: 1 main element with id="main-doc" containting main content
-      //TODO: at least 5 section elements within main-doc with class="main-section"
-      //TODO: first element in .main-section should be a header that contains the topic
+
+    body
+      main#main-doc
+        include nav.pug
+        include main.pug
+
+
       //TODO: each header should have a corresponding id that links to the nav
       //TODO: at least 5 code elements
-      //TODO: at least 10 p elements
       //TODO: at least 5 li items
       //TODO: a navbar with #navbar
       //TODO: each nav item should have header that describes and links to the section
@@ -24,4 +23,4 @@ html(lang="en",dir="ltr")
       //TODO: on regular size devices, laptops/desktops the nav bar should be on the left and always visible
       //TODO:the tech should have at least one media query
       //script(src="dist/scripts/main.min.js")
-      
+      script(src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js")
