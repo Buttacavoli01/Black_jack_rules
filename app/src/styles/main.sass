@@ -2,6 +2,8 @@ $black: #000
 $blue: #00f
 $red: #f00
 $whitesmk: #f0f0f0
+$green: rgb(0, 65, 0)
+$screen-lg: 1024px
 
 //height and width properties includes padding and border
 root
@@ -19,9 +21,22 @@ body
 
 main
   display: grid
+  padding: .5em
 
 h1,
 h2
+  color: $green
   font-family: 'Roboto Slab', serif
   text-transform: capitalize
-  color: rgb(0, 65, 0)
+
+@media (min-width: $screen-lg)
+  nav
+    position: fixed
+    left: 0
+    li
+      margin-bottom: .5em
+
+  main
+    margin-left: 290px
+    margin-right: 50px
+    line-height: 1.5em
